@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع علي العصري</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #989898;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+            overflow: hidden; /* إخفاء الأجزاء الزائدة عند تكبير الصورة */
+            position: relative;
+        }
+
+        .image-caption {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #70d2fb; /* تم تغيير اللون إلى #70d2fb */
+            font-weight: bold;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease; /* تأثير التحويل السلس */
+        }
+
+            /* تأثير الزوم */
+            .image-container img:hover {
+                transform: scale(1.2); /* زيادة الحجم بنسبة 20% عند التمرير فوق الصورة */
+            }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* تعديل خصائص الزر */
+        #changeText {
+            background-color: #70d2fb; /* تغيير لون الخلفية */
+            color: white; /* تغيير لون النص */
+            border: none;
+            padding: 15px 30px; /* زيادة المسافة الداخلية حول النص */
+            font-size: 18px; /* تغيير حجم الخط */
+            border-radius: 8px; /* حواف مستديرة */
+            cursor: pointer; /* تغيير شكل المؤشر عند التمرير فوق الزر */
+            transition: background-color 0.3s ease; /* تأثير التغيير عند التمرير */
+        }
+
+            /* تأثير الزر عند التمرير */
+            #changeText:hover {
+                background-color: #23617c; /* تغيير لون الخلفية عند التمرير */
+            }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Aly EL Sayed</h1>
+        <p>أنا علي، جرافيك ديزاينر.</p>
+    </header>
+    <main>
+        <section class="content">
+            <h2>ده موقع تجريبي لسا تحت الأنشاء هيكون خاص بشغلي من كل الانحاء</h2>
+            <pre>موقع تم تصميمه بثلاث لغات برمجية 
+html
+css
+java</pre>
+            <button id="changeText">البعض من شغلي</button>
+        </section>
+        <section class="gallery">
+            <div class="image-container">
+                <figcaption class="image-caption">تصميمي لجبنة دومتي</figcaption>
+                <img src="images/image1.png" alt="تصميمي لجبنة دومتي">
+            </div>
+            <div class="image-container">
+                <figcaption class="image-caption">تصميمي لغلاف كتاب استاذ حسين</figcaption>
+                <img src="images/image2.jpg" alt="تصميمي لغلاف كتاب استاذ حسين">
+            </div>
+            <div class="image-container">
+                <figcaption class="image-caption">تصميمي لشهادة الاستاذ حسين</figcaption>
+                <img src="images/image3.jpg" alt="تصميمي لشهادة الاستاذ حسين">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 علي - جميع الحقوق محفوظة</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
